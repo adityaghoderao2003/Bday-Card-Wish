@@ -231,8 +231,8 @@ font-family: 'Lobster', cursive;
           transform: translateY(-300px);
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
-  -webkit-animation: in 500ms 5s ease-out forwards;
-          animation: in 500ms 5s ease-out forwards;
+  -webkit-animation: in 4s 5s ease-out forwards;
+  animation: in 4s 5s ease-out forwards;;
 }
 
 .velas:after,
@@ -332,9 +332,11 @@ font-family: 'Lobster', cursive;
   }
 }
 @keyframes in {
+  from {
+    transform: translateY(-300px);
+  }
   to {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
+    transform: translateY(0);
   }
 }
 .text {
